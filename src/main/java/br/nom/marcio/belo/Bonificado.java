@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 
 public class Bonificado extends Funcionario
 {
+   //TESTE Rodrigo	
     public static final BigDecimal CINCO = new BigDecimal("5.00");
     private BigDecimal bonus = BigDecimal.ZERO;
 
@@ -40,4 +41,6 @@ public class Bonificado extends Funcionario
     public BigDecimal getSalarioAnual() {
         return salarioAnual.add( bonus).setScale( 2, BigDecimal.ROUND_UP);
     }
+	
+   
 }
